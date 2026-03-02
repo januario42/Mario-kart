@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>Desafio de projeto da DIO (Digital Innovation One)</b><br/>
-  Simulador de corrida em Node.js inspirado em Mario Kart, rodando direto no terminal.
+  Simulador de corrida inspirado em Mario Kart no terminal (Node.js).
 </p>
 
 ## Objetivo
@@ -63,18 +63,7 @@ Simular uma corrida entre 2 personagens em 5 rodadas, aplicando regras de pista,
 - Em `CONFRONTO`, o perdedor perde 1 ponto (nunca abaixo de 0).
 - No fim das 5 rodadas, vence quem tiver mais pontos.
 
-## Interface no console
-
-- Menu visual para selecao de 2 personagens.
-- Validacao de entrada invalida.
-- Impede selecao duplicada do mesmo personagem.
-- Exibe placar por rodada e resultado final.
-
-## Requisitos
-
-- Node.js 18+
-
-## Como executar
+## Como executar (console)
 
 ```bash
 npm install
@@ -116,9 +105,9 @@ Mario-kart/
 
 ## Proximas melhorias
 
-- Modo torneio (melhor de 3 corridas).
-- Ranking local de vitorias.
-- Relatorio de cobertura de testes.
+- ranking local de vitorias;
+- relatorio de cobertura de testes;
+- ajustes visuais adicionais no terminal.
 
 ## Licenca
 
