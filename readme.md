@@ -81,13 +81,35 @@ npm install
 npm start
 ```
 
+## Testes
+
+Executar todos os testes:
+
+```bash
+npm test
+```
+
+Cobertura atual dos testes automatizados:
+
+- clone de personagem com `PONTOS` iniciado em 0;
+- sorteio de dado (`1` a `6`);
+- sorteio de bloco (`RETA`, `CURVA`, `CONFRONTO`);
+- pontuacao em `RETA`;
+- empate em `CURVA` sem alterar pontos;
+- perda de ponto em `CONFRONTO`;
+- protecao contra pontuacao negativa;
+- empate em `CONFRONTO` sem alterar pontos.
+
 ## Estrutura do projeto
 
 ```text
 Mario-kart/
   docs/
   src/
+    game.js
     index.js
+  test/
+    game.test.js
   package.json
   readme.md
 ```
@@ -96,7 +118,7 @@ Mario-kart/
 
 - Modo torneio (melhor de 3 corridas).
 - Ranking local de vitorias.
-- Testes automatizados das regras.
+- Relatorio de cobertura de testes.
 
 ## Licenca
 

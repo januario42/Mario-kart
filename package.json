@@ -4,7 +4,8 @@
   "description": "Simulador de corrida Mario Kart em Node.js",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "node --test"
   },
   "author": "Seu Nome",
   "license": "MIT"
