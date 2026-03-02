@@ -103,12 +103,6 @@ Mario-kart/
   readme.md
 ```
 
-## Proximas melhorias
-
-- ranking local de vitorias;
-- relatorio de cobertura de testes;
-- ajustes visuais adicionais no terminal.
-
 ## Licenca
 
 MIT
