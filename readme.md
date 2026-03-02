@@ -1,103 +1,103 @@
-<h1>Desafio de projeto do Felipão: Mario Kart.JS</h1>
+<h1 align="center">Mario Kart.JS</h1>
 
-  <table>
-        <tr>
-            <td>
-                <img src="./docs/header.gif" alt="Mario Kart" width="200">
-            </td>
-            <td>
-                <b>Objetivo:</b>
-                <p>Mario Kart é uma série de jogos de corrida desenvolvida e publicada pela Nintendo. Nosso desafio será criar uma lógica de um jogo de vídeo game para simular corridas de Mario Kart, levando em consideração as regras e mecânicas abaixo.</p>
-            </td>
-        </tr>
-    </table>
+<p align="center">
+  <img src="./docs/header.gif" alt="Mario Kart" width="260" />
+</p>
 
-<h2>Players</h2>
-      <table style="border-collapse: collapse; width: 800px; margin: 0 auto;">
-        <tr>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Mario</p>
-                <img src="./docs/mario.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 4</p>
-                <p>Manobrabilidade: 3</p>
-                <p>Poder: 3</p>
-            </td>
-             <td style="border: 1px solid black; text-align: center;">
-                <p>Peach</p>
-                <img src="./docs/peach.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 3</p>
-                <p>Manobrabilidade: 4</p>
-                <p>Poder: 2</p>
-            </td>
-              <td style="border: 1px solid black; text-align: center;">
-                <p>Yoshi</p>
-                <img src="./docs/yoshi.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 2</p>
-                <p>Manobrabilidade: 4</p>
-                <p>Poder: 3</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Bowser</p>
-                <img src="./docs/bowser.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 5</p>
-                <p>Manobrabilidade: 2</p>
-                <p>Poder: 5</p>
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Luigi</p>
-                <img src="./docs/luigi.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 3</p>
-                <p>Manobrabilidade: 4</p>
-                <p>Poder: 4</p>
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Donkey Kong</p>
-                <img src="./docs/dk.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 2</p>
-                <p>Manobrabilidade: 2</p>
-                <p>Poder: 5</p>
-            </td>
-        </tr>
-    </table>
+<p align="center">
+  <b>Desafio de projeto da DIO (Digital Innovation One)</b><br/>
+  Simulador de corrida em Node.js inspirado em Mario Kart, rodando direto no terminal.
+</p>
 
-<p></p>
+## Objetivo
 
-<h3>🕹️ Regras & mecânicas:</h3>
+Simular uma corrida entre 2 personagens em 5 rodadas, aplicando regras de pista, confronto e pontuacao com base nos atributos de cada corredor.
 
-<b>Jogadores:</b>
+## Personagens
 
-<input type="checkbox" id="jogadores-item" />
-<label for="jogadores-item">O Computador deve receber dois personagens para disputar a corrida em um objeto cada</label>
+<table>
+  <tr>
+    <td align="center">
+      <p><b>Mario</b></p>
+      <img src="./docs/mario.gif" alt="Mario" width="70" height="70">
+      <p>Vel: 4 | Man: 3 | Pod: 3</p>
+    </td>
+    <td align="center">
+      <p><b>Peach</b></p>
+      <img src="./docs/peach.gif" alt="Peach" width="70" height="70">
+      <p>Vel: 3 | Man: 4 | Pod: 2</p>
+    </td>
+    <td align="center">
+      <p><b>Yoshi</b></p>
+      <img src="./docs/yoshi.gif" alt="Yoshi" width="70" height="70">
+      <p>Vel: 2 | Man: 4 | Pod: 3</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <p><b>Bowser</b></p>
+      <img src="./docs/bowser.gif" alt="Bowser" width="70" height="70">
+      <p>Vel: 5 | Man: 2 | Pod: 5</p>
+    </td>
+    <td align="center">
+      <p><b>Luigi</b></p>
+      <img src="./docs/luigi.gif" alt="Luigi" width="70" height="70">
+      <p>Vel: 3 | Man: 4 | Pod: 4</p>
+    </td>
+    <td align="center">
+      <p><b>Donkey Kong</b></p>
+      <img src="./docs/dk.gif" alt="Donkey Kong" width="70" height="70">
+      <p>Vel: 2 | Man: 2 | Pod: 5</p>
+    </td>
+  </tr>
+</table>
 
-<b>Pistas:</b>
+## Regras do jogo
 
-<ul>
-  <li><input type="checkbox" id="pistas-1-item" /> <label for="pistas-1-item">Os personagens irão correr em uma pista aleatória de 5 rodadas</label></li>
-  <li><input type="checkbox" id="pistas-2-item" /> <label for="pistas-2-item">A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou confronto</label>
-    <ul>
-      <li><input type="checkbox" id="pistas-2-1-item" /> <label for="pistas-2-1-item">Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-2-item" /> <label for="pistas-2-2-item">Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Caso o bloco da pista seja um CONFRONTO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, quem perder, perde um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Nenhum jogador pode ter pontuação negativa (valores abaixo de 0)</label></li>
-    </ul>
-  </li>
-</ul>
+- A corrida tem 5 rodadas.
+- A cada rodada, e sorteado um bloco: `RETA`, `CURVA` ou `CONFRONTO`.
+- Em `RETA`: dado (1-6) + `VELOCIDADE`.
+- Em `CURVA`: dado (1-6) + `MANOBRABILIDADE`.
+- Em `CONFRONTO`: dado (1-6) + `PODER`.
+- Em `RETA` e `CURVA`, o maior total ganha 1 ponto.
+- Em `CONFRONTO`, o perdedor perde 1 ponto (nunca abaixo de 0).
+- No fim das 5 rodadas, vence quem tiver mais pontos.
 
-<b>Condição de vitória:</b>
+## Interface no console
 
-<input type="checkbox" id="vitoria-item" />
-<label for="vitoria-item">Ao final, vence quem acumulou mais pontos</label>
+- Menu visual para selecao de 2 personagens.
+- Validacao de entrada invalida.
+- Impede selecao duplicada do mesmo personagem.
+- Exibe placar por rodada e resultado final.
+
+## Requisitos
+
+- Node.js 18+
+
+## Como executar
+
+```bash
+npm install
+npm start
+```
+
+## Estrutura do projeto
+
+```text
+Mario-kart/
+  docs/
+  src/
+    index.js
+  package.json
+  readme.md
+```
+
+## Proximas melhorias
+
+- Modo torneio (melhor de 3 corridas).
+- Ranking local de vitorias.
+- Testes automatizados das regras.
+
+## Licenca
+
+MIT
